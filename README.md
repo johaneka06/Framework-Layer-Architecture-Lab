@@ -1,4 +1,4 @@
-"# Framework Layer Architecture - Lab" 
+# Framework Layer Architecture - Lab
 
 Notes:
 
