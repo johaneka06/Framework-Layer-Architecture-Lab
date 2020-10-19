@@ -26,20 +26,20 @@ public class Storage {
 		return instance;
 	}
 	
-	public boolean add(String bread) {
-		if(bread.equals("Chocolate") && chocolate > 0) {
+	public boolean add(Bread bread) {
+		if(bread instanceof Chocolate && chocolate > 0) {
 			vBread.add(new Chocolate());
 			
 			chocolate--;
 			
 			return true;
-		} else if(bread.equals("Strawberry") && strawberry > 0) {
+		} else if(bread instanceof Strawberry && strawberry > 0) {
 			vBread.add(new Strawberry());
 			
 			strawberry--;
 			
 			return true;
-		} else if(bread.equals("Banana") && banana > 0) {
+		} else if(bread instanceof Banana && banana > 0) {
 			vBread.add(new Banana());
 			
 			banana--;

@@ -2,6 +2,7 @@ package main;
 
 import java.util.Scanner;
 
+import bread.factories.Factories;
 import storage.Storage;
 
 public class Main {
@@ -34,7 +35,7 @@ public class Main {
 				opt = scan.nextLine();
 			} while(!(opt.equals("Chocolate") || opt.equals("Strawberry") || opt.equals("Banana")));
 			
-			if(!storage.add(opt)) {
+			if(!storage.add(Factories.create(opt))) {
 				System.out.println("Insufficient Ingredients");
 				scan.nextLine();
 			}
